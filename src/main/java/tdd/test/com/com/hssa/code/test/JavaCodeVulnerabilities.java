@@ -16,15 +16,15 @@ import javax.servlet.http.HttpServletResponse;
  *
  */
 public class JavaCodeVulnerabilities {
-/*	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException, ScriptException {
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException, ScriptException {
 		  String input = req.getParameter("input");
 System.out.println("test");
 		  ScriptEngineManager manager = new ScriptEngineManager();
 		  ScriptEngine engine = manager.getEngineByName("JavaScript");
 		  engine.eval(input); // Noncompliant
-		}*/
+		}
 	
-	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException, ScriptException {
+	/*protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException, ScriptException {
 		  String input = req.getParameter("input");
 
 		  // Match the input against a whitelist
@@ -36,5 +36,5 @@ System.out.println("test");
 		  ScriptEngineManager manager = new ScriptEngineManager();
 		  ScriptEngine engine = manager.getEngineByName("JavaScript");
 		  engine.eval(input);
-		}
+		}*/
 }
